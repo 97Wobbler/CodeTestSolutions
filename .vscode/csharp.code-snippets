@@ -1,0 +1,17 @@
+{
+	"write input string": {
+		"scope": "csharp",
+		"prefix": "input",
+		"body": "string input = Console.ReadLine();",
+	},
+	"ReadLine": {
+		"scope": "csharp",
+		"prefix": "Console.ReadLine",
+		"body": "Console.ReadLine();",
+	},
+	"WriteLine": {
+		"scope": "csharp",
+		"prefix": "Console.WriteLine",
+		"body": "Console.WriteLine($0);",
+	}
+}

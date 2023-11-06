@@ -1,23 +1,10 @@
-using System.Text;
-
-int smallA = 97;
-int smallZ = 122;
-
 string input = Console.ReadLine();
-StringBuilder stringBuilder = new StringBuilder();
+List<int> indexes = new List<int>();
 
-for (int c = smallA; c <= smallZ; c++)
+for (char c = 'a'; c <= 'z'; c++)
 {
-    char character = (char)c;
-    int index = input.IndexOf(character);
-
-    stringBuilder.Append(index);
-
-    if (c < smallZ)
-    {
-        stringBuilder.Append(" ");
-    }
+    indexes.Add(input.IndexOf(c));
 }
 
-string result = stringBuilder.ToString();
+string result = string.Join(" ", indexes);
 Console.WriteLine(result);
