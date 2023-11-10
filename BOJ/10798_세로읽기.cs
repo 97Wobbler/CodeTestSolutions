@@ -1,5 +1,6 @@
 int rowCountMax = 5;
 int columnCountMax = 15;
+char initialCharValue = '\0';
 
 char[,] inputs = new char[rowCountMax, columnCountMax];
 string result = "";
@@ -19,7 +20,7 @@ for (int column = 0; column < columnCountMax; column++)
 {
     for (int row = 0; row < rowCountMax; row++)
     {
-        if (inputs[row, column] != '\0') result += inputs[row, column];
+        if (inputs[row, column] != initialCharValue) result += inputs[row, column];
     }
 }
 
