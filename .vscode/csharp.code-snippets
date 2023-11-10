@@ -4,6 +4,11 @@
 		"prefix": "input",
 		"body": "string input = Console.ReadLine();",
 	},
+	"write input strings array": {
+		"scope": "csharp",
+		"prefix": "inputs",
+		"body": "string[] inputs = Console.ReadLine().Split();",
+	},
 	"ReadLine": {
 		"scope": "csharp",
 		"prefix": "Console.ReadLine",
