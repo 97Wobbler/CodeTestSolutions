@@ -9,6 +9,11 @@
 		"prefix": "inputs",
 		"body": "string[] inputs = Console.ReadLine().Split();",
 	},
+	"write input int": {
+		"scope": "csharp",
+		"prefix": ["N", "number"],
+		"body": "int N = int.Parse(Console.ReadLine());",
+	},
 	"ReadLine": {
 		"scope": "csharp",
 		"prefix": "Console.ReadLine",
