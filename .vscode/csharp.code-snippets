@@ -11,8 +11,13 @@
 	},
 	"write input int": {
 		"scope": "csharp",
-		"prefix": ["N", "number"],
+		"prefix": ["number", "N"],
 		"body": "int N = int.Parse(Console.ReadLine());",
+	},
+	"write inputs int": {
+		"scope": "csharp",
+		"prefix": "numbers",
+		"body": "int[] numbers = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);",
 	},
 	"ReadLine": {
 		"scope": "csharp",
