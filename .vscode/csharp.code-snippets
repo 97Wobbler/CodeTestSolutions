@@ -1,4 +1,9 @@
 {
+	"using LINQ": {
+		"scope": "csharp",
+		"prefix": ["Linq", "LINQ", "using System.Linq"],
+		"body": "using System.Linq;",
+	},
 	"write input string": {
 		"scope": "csharp",
 		"prefix": "input",
