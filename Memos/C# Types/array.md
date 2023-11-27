@@ -73,3 +73,57 @@ foreach (int item in array) {
 ```csharp
 Array.Reverse(myArray, 1, 3); // 배열의 일부분(1~3번 인덱스) 뒤집기
 ```
+
+
+### Sort 메서드 - 배열의 정렬
+
+C#에서 배열을 크기순으로 정렬하는 데 사용할 수 있는 기본 함수는 Array.Sort입니다. 아래는 사용 예제입니다:
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 4, 2, 8, 6, 1, 7 };
+
+        // 배열을 크기순으로 정렬
+        Array.Sort(numbers);
+
+        // 정렬된 배열 출력
+        Console.WriteLine("정렬된 배열:");
+        foreach (var number in numbers)
+        {
+            Console.Write(number + " ");
+        }
+    }
+}
+```
+
+이 코드는 Array.Sort 메서드를 사용하여 배열을 크기순으로 정렬합니다. 만약 내림차순으로 정렬하려면 Array.Sort 메서드를 호출한 후에 Array.Reverse 메서드를 사용할 수 있습니다.
+
+### Sum 메서드
+
+배열의 합계를 계산하기 위해 Sum 메서드를 사용할 수 있습니다. 아래는 예제 코드입니다:
+```csharp
+using System;
+using System.Linq; // 필요한 경우 추가
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 4, 2, 8, 6, 1, 7 };
+
+        // 배열의 합계 계산
+        int sum = numbers.Sum();
+
+        // 합계 출력
+        Console.WriteLine("배열의 합계: " + sum);
+    }
+}
+
+```
+
+이 코드에서 numbers.Sum()은 배열의 모든 요소의 합계를 반환합니다. 위의 예제를 실행하면 배열의 합계가 출력됩니다. 필요한 경우 코드에 using System.Linq;을 추가하여 LINQ(언어 통합 쿼리)를 사용할 수 있습니다.

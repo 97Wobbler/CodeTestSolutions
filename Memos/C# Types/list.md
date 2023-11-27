@@ -102,3 +102,25 @@ foreach (int item in myList)
 ```
 
 이 코드를 실행하면 리스트 `myList`의 순서가 뒤집혀서 `5 4 3 2 1`로 출력됩니다. `Reverse` 메서드는 리스트 자체를 변경하므로 원본 리스트의 순서가 변경됨을 유의해야 합니다.
+
+### Count 필드
+
+C#의 List<T> 클래스에서는 리스트의 길이를 반환하는 메서드 또는 필드가 직접적으로 제공되지 않습니다. 그러나 리스트의 길이를 알고 싶다면 Count 속성을 사용할 수 있습니다. List<T> 클래스는 Count 속성을 통해 현재 리스트에 포함된 요소의 수를 반환합니다.
+
+```csharp
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+
+        int length = numbers.Count;
+
+        Console.WriteLine($"리스트의 길이: {length}");
+    }
+}
+
+```
